@@ -1,0 +1,97 @@
+body{
+    font-family: 'Montserrat';
+    background-color: aliceblue;
+    color: azure;
+}
+
+#nome{
+    text-align: center;
+    margin-top: 40px;
+    color: black ;
+}
+
+#snorlax{
+    border-radius: 60%;
+    margin-left: 29%;
+    margin-top: 18px;
+    border: solid 2px black;
+}
+
+.quadradin{
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+    height: 550px;
+    border-radius: 10px;
+    background-color: rgb(181, 220, 253);
+    margin-left: 32%;
+    border: solid 2px rgb(60, 60, 60);
+}
+
+#topico{
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 6;
+    grid-template-areas: "snorlax"
+                         "nome"
+                         "quadrado1"
+                         "quadrado2"
+                         "quadrado3";
+}
+
+i {
+    color: rgb(0, 0, 0);
+}
+
+.quadrado1{
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 8px;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+}
+
+.quadrado2{
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 8px;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+}
+
+.quadrado3{
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 8px;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+}
+a{
+    text-decoration-line: none;
+}
+
+a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px){
+    #grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "aside"
+                             "footer";
+    }
+    .header-com-flexbox{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,97 +1,115 @@
-body{
-    font-family: 'Montserrat';
-    background-color: aliceblue;
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: rgb(36, 36, 36);
     color: azure;
+    margin: 0; 
+    padding: 0;
 }
 
-#nome{
-    text-align: center;
-    margin-top: 40px;
-    color: black ;
-}
 
-#snorlax{
-    border-radius: 60%;
-    margin-left: 29%;
-    margin-top: 18px;
-    border: solid 2px black;
-}
-
-.quadradin{
+.tudo {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; 
     padding: 20px;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
-    height: 550px;
-    border-radius: 10px;
-    background-color: rgb(181, 220, 253);
-    margin-left: 32%;
-    border: solid 2px rgb(60, 60, 60);
+    box-sizing: border-box; 
 }
 
-#topico{
+
+.quadradin {
+    padding: 14px;
+  
+    width: 36%; 
+    max-width: 40;
+    min-width: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    
+   
+    min-height: 400px;
+    max-height: 520px; 
+    
+    background-color: rgb(151, 198, 246);
+    border: solid 2px rgb(60, 60, 60);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nome {
+    text-align: center;
+    margin-top: 14px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+#snorlax {
+    border-radius: 60%;
+    
+    margin-top: -8px;
+    border: solid 2px black;
+ 
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+}
+
+#topico {
     list-style: none;
     text-align: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 6;
-    grid-template-areas: "snorlax"
-                         "nome"
-                         "quadrado1"
-                         "quadrado2"
-                         "quadrado3";
+    padding: 0;
+    margin: 10px 0;
 }
+
 
 i {
     color: rgb(0, 0, 0);
 }
 
-.quadrado1{
-    padding: 20px;
-    max-width: 200px;
-    border-radius: 8px;
-    border: solid 2px rgb(0, 0, 0);
-    text-align: center;
-    margin-left: 10%;
+
+.quadrados-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+    width: 100%; 
 }
 
-.quadrado2{
+.quadrado1, .quadrado2, .quadrado3 {
     padding: 20px;
+    width: calc(20px); 
     max-width: 200px;
+    min-width: 200px; 
     border-radius: 8px;
+    background-color: rgb(116, 181, 250);
     border: solid 2px rgb(0, 0, 0);
     text-align: center;
-    margin-left: 10%;
+    margin: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 1);
+    color: black;
 }
 
-.quadrado3{
-    padding: 20px;
-    max-width: 200px;
-    border-radius: 8px;
-    border: solid 2px rgb(0, 0, 0);
-    text-align: center;
-    margin-left: 10%;
-}
-a{
+
+a {
     text-decoration-line: none;
+    color: inherit; 
+    display: block; 
+    padding: 5px; 
 }
 
-a:hover{
+a:hover {
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
-@media (max-width: 768px){
-    #grid-container{
-        grid-template-columns: 1fr;
-        grid-template-areas: "header"
-                             "nav"
-                             "main"
-                             "aside"
-                             "footer";
-    }
-    .header-com-flexbox{
-        flex-direction: column;
-        gap: 10px;
-    }
+i {
+    color: rgb(0, 0, 0);
 }
